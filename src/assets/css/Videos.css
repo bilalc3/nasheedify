@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/*- ------------- Videos COMPONENT ----------------- */
+
+.videobox {
+    min-height: calc(100vh - 120px); 
+    padding-bottom: 40px; 
+    background-color: whitesmoke;
+   
+}
+
+.videoheading {
+    font-family: poppins;
+    text-align: center;
+    font-size: 18px; 
+    color: white; 
+    background-color: #282828;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+
+}
+
+/*- the split between top and bottom -- */
+.videopreview {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 600px;
+    background-color: #F8F8F8;
+    outline: 2px solid #282828 ;
+
+
+}
+.videopreview:hover {
+
+    color: white;
+    border: #1762A7 solid 1px;
+    background:#fff;
+    background-color: grey;
+    animation: bounce 1s;
+
+
+
+    
+}
+
+/*- bouncing -- */
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+.videoinfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px 10px 40px; 
+
+}
+
+/*- data and type split - */
+.rightbottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/*- big grid-- */
+.videocontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px; 
+
+}
+
+.videoimage {
+    width: 600px;
+    height: 350px; 
+
+}
+
+.videotype {
+    width: 10px;
+    width: 27px; 
+}
+
+.videologo {
+    height: 60px; 
+    width: 30px; 
+}
+
+.videotitle {
+    font-family: Poppins;
+    font-size: 27px;
+
+}
+
+.videodate {
+    font-family: Roboto;
+    font-size: 18px; 
+
+}
